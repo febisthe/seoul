@@ -1,0 +1,42 @@
+@import './reset.css';
+@import './common.css';
+
+/* header */
+#header .head-inner { position: relative; margin: 0 auto; width: 1152px; } 
+#header .group-top { height: 40px; display: flex; align-items: center; justify-content: space-between; } 
+#header .group-top .logo { height: 100%; display: flex; align-items: center; } 
+#header .group-top .logo a { display: block; width: 105px; height: 27px; background: url(../images/bg_common1.png) no-repeat -5px -165px; } 
+#header .group-top .gnb { height: 100%; width: 100%; display: flex; align-items: center; justify-content: space-between; font-weight: 700; } 
+#header .gnb .col-left { display: flex; align-items: center; gap: 30px; padding-top: 10px; padding-left: 50px; height: 100%; } 
+#header .gnb .col-right { display: flex; align-items: center; gap: 30px; padding-top: 10px; } 
+#header .group-bottom { height: 119px; display: flex; align-items: center; justify-content: space-between; } 
+#header .slogan a { display: block; width: 133px; height: 51px; background: url(../images/mk_slogan.png) no-repeat 0 0; } 
+#header .search { position: relative; width: 520px; height: 42px; border: 3px solid #2292e9; margin-left: 100px; } 
+#header .search input { height: 35px; line-height: 35px; padding: 0 12px; color: #767676; } 
+#header .search .btn-keyboard { background:url(../images/ic_keyboard.png); width: 29px; height: 16px; position: absolute; right: 42px; top: 50%; transform: translateY(-50%); } 
+#header .search .btn-submit { display: block; background: url(../images/bg_common1.png) no-repeat -32px -97px; width: 36px; height: 36px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); } 
+#header .language { display: flex; position: absolute; right: 0; top: 43px; } 
+#header .language select { width: 80px; height: 21px; border-color: #afcfea; color: #1E6CB3; font-size: 12px; padding: 0 0 0 2px; line-height: 21px; } 
+#header .language button { width: 30px; height: 21px; font-size: 11px; color: #fff; background-color: #1E6CB3; } 
+#header .weather { display: flex; align-items: center; margin-left: 4px; } 
+#header .weather .thumb { width: 58px; height: 47px; } 
+#header .weather .info { display: flex; flex-direction: column; padding-left: 10px; } 
+#header .weather .w-temp .deg { font-size: 25px; margin-right: 5px; } 
+#header .weather .w-temp .desc { font-size: 16px; letter-spacing: -0.1em; } 
+#header .weather .w-dust { margin-top: 7px; font-size: 13px; } 
+#header .weather .w-dust .good { color: #0D6EFD; } 
+
+
+/* footer */
+#footer .foot-inner { margin: 0 auto; width: 1152px; margin-top: 20px; } 
+#footer .group-top ul { display: flex; align-items: center; gap: 20px; } 
+#footer .group-top ul li { position: relative; font-size: 12px; color: #636363; padding: 15px 0; } 
+#footer .group-top .f-b { font-weight: 700; color: #000; } 
+#footer .group-top ul li+li:not(:last-child)::before { content: ''; position: absolute; top: 50%; left: -10px; display: block; width: 1px; height: 14px; margin-top: -6px; background: #dcdcdc; } 
+#footer .channelplus { display: block; position: relative; top: 0; left: -10px; background-image: url(../images/ic_channelplus.png); width: 114px; height: 30px; } 
+#footer .group-bottom { position: relative; display: flex; align-items: center; padding: 22px 0; border-top: 1px solid #ccc; } 
+#footer .group-bottom .logo { margin-right: 40px; float: left; width: 108px; height: 45px; background: url(../images/bg_common1.png) no-repeat -180px 0; } 
+#footer .group-bottom address { font-size: 12px; color: #636363; } 
+#footer .group-bottom .mark { position: absolute; right: 0; } 
+#footer .btn-gotop { position: fixed; bottom: 0; left: 50%; margin-left: 600px; transition: 1s; opacity: 0; } 
+#footer .btn-gotop.show { opacity: 1; bottom: 100px; } 

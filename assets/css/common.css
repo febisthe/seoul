@@ -1,0 +1,25 @@
+.skip-nav { position: absolute; top: 0; left: 0; } 
+.skip-nav a { display: flex; align-items: center; justify-content: center; transform: translateY(-100%); position: absolute; top: 0; left: 0; } 
+.skip-nav a:active,
+.skip-nav a:focus { transform: translateY(0); } 
+
+.blind {position: absolute;width: 1px;height: 1px;overflow: hidden;clip: rect(0, 0, 0, 0); } 
+.headline { font-size: 24px; font-weight: 700; line-height: 1.35em; } 
+
+
+/* inner 레이아웃 */
+.wrap { margin: 0 auto; width: 1152px; /* 섹션1,2,3 사용 */}
+.wrap2 { display: flex; align-items: center; justify-content: space-between; padding: 50px 0 50px; border-bottom: 2px solid #222222; margin: 0 auto; width: 1152px; /* 섹션4,5,6 사용 */}
+.wrap3 { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 50px; margin: 0 auto; width: 1152px; border-bottom: 2px solid #222222; } 
+.flex { display: flex; align-items: flex-start; justify-content: space-between; /* 섹션1,2 사용 */}
+
+
+/* 링크 */
+.link-detail { text-align: center; padding-right: 13px; width: 112px; height: 29px; border: 1px solid #ddd; box-sizing: border-box; display: block; font-size: 15px; line-height: 28px; background: url(../images/ic_arrow.png) no-repeat right 13px top 50%; } 
+.link-all { display: block; width: 75px; height: 18px; font-size: 15px; background: url(../images/bg_common1.png) no-repeat 0 -259px; } 
+
+
+/* 슬라이드 컨트롤 박스 */
+.control { display: flex; justify-content: flex-end; align-items: center; height: 32px; margin-top: 5px; overflow: hidden; } 
+.control .fraction { width: auto; font-size: 14px; padding-right: 5px; } 
+.control button { width: 20px; height: 20px; overflow: hidden; background: url(../images/bg_common1.png) no-repeat; } 
